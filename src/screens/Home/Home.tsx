@@ -91,9 +91,7 @@ const Home: FC<HomeProps> = ({navigation}) => {
       <StatusBar backgroundColor={'white'} barStyle={'dark-content'} />
       <View style={styles.header}>
         <Title>Let's Explore</Title>
-        <Pressable
-          style={styles.icon}
-          onPress={() => navigation.navigate('Profile')}>
+        <Pressable style={styles.icon}>
           <FontAwesomeIcon icon={faEnvelope} color={'#CACDDE'} size={20} />
           <View style={styles.counter}>
             <Text style={styles.counterTxt}>2</Text>
